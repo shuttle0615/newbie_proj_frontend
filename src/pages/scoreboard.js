@@ -6,7 +6,7 @@ function Gameplay() {
     const [reset, setReset] = useState([]);
 
     const advise = async () => {
-        const response = await fetch('http://localhost:5000/game');
+        const response = await fetch('http://ssal.sparcs.org:56172/game');
         const data = await response.json();
         const arr = await data.map((a) => [a.username,a.winrate]);
         return arr;

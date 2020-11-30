@@ -40,7 +40,7 @@ function Login(props) {
 
         console.log("this happened")
 
-        const response = await fetch('http://localhost:5000/login/login', requestOptions)
+        const response = await fetch('http://ssal.sparcs.org:56172/login/login', requestOptions)
         const data = await response.json()
 
         if(data.state === "false"){

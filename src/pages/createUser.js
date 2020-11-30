@@ -35,7 +35,7 @@ function CreateUser() {
         password: userinfo.password     })
     };
 
-    const response = await fetch('http://localhost:5000/login/createUser', requestOptions)
+    const response = await fetch('http://ssal.sparcs.org:56172/login/createUser', requestOptions)
     const data = await response.json()
 
     if(data.state === "false"){
