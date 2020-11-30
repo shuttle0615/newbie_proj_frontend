@@ -64,6 +64,10 @@ function CreateUser() {
         <button onClick = {sendRequest}> login </button><br/>
       </form>
 
+      <h3>
+        please do not use alphabet in password...
+      </h3>
+
       <p>
         {logstate}
       </p>
